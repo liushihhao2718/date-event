@@ -112,9 +112,7 @@ main {
 .date-grid button:focus{
   outline: 0!important;
 }
-.date-grid button:hover,
-.date-grid button:active,
-.date-grid button.is-selected {
+.date-grid button:hover{
   background-color: var(--blue-grey-050);
   color: var(--teal-900);
 }

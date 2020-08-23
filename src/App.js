@@ -58,23 +58,16 @@ function App() {
         </div>
       </main>
       <Modal show={showEvent !== null} onHide={handleClose}
+      className="pb-5"
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered>
         <Modal.Header closeButton>
           <Modal.Title>{formatDate(showEvent)}</Modal.Title>
         </Modal.Header>
-          <Modal.Body>
+          <Modal.Body closeButton>
             <EventDiary events={events.filter(ev=>ev.date === formatDate(showEvent))}/>
           </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
       </Modal>
     </>
   );
