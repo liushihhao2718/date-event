@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "set PUBLIC_URL=https://liushihhao2718.github.io/date-event&&react-scripts build",
+    "build": "set PUBLIC_URL=https://liushihhao2718.github.io/date-event/build&&react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
