@@ -3,7 +3,7 @@ import { Calendar } from "./calendar.js";
 import { Button, Modal, ListGroup } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-
+let fetchEvents = false;
 function App() {
 	const [date, setDate] = useState(new Date());
 	const [showEvent, setShowEvent] = useState(null);
@@ -17,7 +17,12 @@ function App() {
 	};
 
 	// let events = []
-	fetch('../public/event.json').then(x=>x.json()).then(x=>setEvents(x))
+
+	if(!fetchEvents){
+		fetchEvents = !fetchEvents;
+		fetch('../public/event.json').then(x=>x.json()).then(x=>setEvents(x))
+	}
+	
 
 	return (
 		<>
