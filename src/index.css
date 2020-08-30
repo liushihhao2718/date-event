@@ -26,16 +26,15 @@ html {
   font-size: 125%;
   line-height: 1.4;
   font-weight: 400;
-  background-color: var(--blue-grey-100);
+  /* background-color: var(--blue-grey-100); */
 }
 
 #root {
-  background-color: var(--blue-grey-100);
+  /* background-color: var(--blue-grey-100); */
   padding: 5px;
 }
 body {
-  min-height: 100vw;
-  background-color: var(--blue-grey-100)!important;
+  /* background-color: var(--blue-grey-100)!important; */
 }
 
 main {
